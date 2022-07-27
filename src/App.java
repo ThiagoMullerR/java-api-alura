@@ -11,8 +11,11 @@ public class App {
 //		String url = "https://alura-imdb-api.herokuapp.com/movies";
 //		ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
 		
-		String url = "https://api.mocki.io/v2/549a5d8b/NASA-APOD";
-		ExtratorDeConteudo extrator =  new ExtratorDeConteudoDaNasa();
+//		String url = "https://api.mocki.io/v2/549a5d8b/NASA-APOD";
+//		ExtratorDeConteudo extrator =  new ExtratorDeConteudoDaNasa();
+		
+		String url = "http://localhost:8080/linguagens";
+		ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
 
 		var http = new ClienteHttp();
 		String json = http.buscaDados(url);
@@ -22,7 +25,7 @@ public class App {
 
 		var geradora = new GeradorDeFigurinhas();
 
-		for(int i=0; i < 3; i++) {
+		for(int i=0; i < 4; i++) {
 
 			Conteudo conteudo = conteudos.get(i);
 
