@@ -14,7 +14,7 @@ public class App {
 //		String url = "https://api.mocki.io/v2/549a5d8b/NASA-APOD";
 //		ExtratorDeConteudo extrator =  new ExtratorDeConteudoDaNasa();
 		
-		String url = "http://localhost:8080/linguagens";
+		String url = "https://thiago-alura-linguagens-api.herokuapp.com/linguagens";
 		ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
 
 		var http = new ClienteHttp();
@@ -25,7 +25,7 @@ public class App {
 
 		var geradora = new GeradorDeFigurinhas();
 
-		for(int i=0; i < 4; i++) {
+		for(int i=0; i < 5; i++) {
 
 			Conteudo conteudo = conteudos.get(i);
 
